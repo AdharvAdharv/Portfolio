@@ -1,0 +1,31 @@
+body {
+    cursor: none;
+  }
+  
+  .cursor-dot, .cursor-tail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+  }
+  
+  .cursor-dot {
+    width: 25px;
+    height: 25px;
+    background: white;
+  }
+  
+  .cursor-tail {
+    width: 7px;
+    height: 7px;
+    background: white;
+    opacity: 0;   
+    transition: top 0.05s linear, left 0.05s linear;
+  }
+  body.moving .cursor-tail {
+    opacity: 1;
+  }
+  
