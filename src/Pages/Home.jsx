@@ -319,15 +319,15 @@ function Home() {
 
         {/* Resume download button */}
         <div className="button-wrapper">
-        <button className=" btn-resume">
           <a
-            href="/resume.pdf"
-            download="Adharv_Resume.pdf"
+            href="/Adharv_resume.pdf"
+            download="Adharv_resume.pdf"
             style={{ textDecoration: "none", color: "inherit" }}
             >
+        <button className=" btn-resume">
             Download Resume
-          </a>
         </button>
+          </a>
         </div>
       </div>
     </>

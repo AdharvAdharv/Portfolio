@@ -235,11 +235,6 @@ body {
     background-color: #3ea543;
     color: black;
   }
-  
-  .btn-resume a {
-    color: white;
-    font-weight: bold;
-  }
 
   .button-wrapper {
     display: flex;
