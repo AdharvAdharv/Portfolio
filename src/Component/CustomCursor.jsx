@@ -1,7 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./CustomCursor.css";
 
 const CustomCursor = () => {
+  const isMoving = useRef(false);
+  const [moving, setMoving] = useState(false);
+
   useEffect(() => {
     const dot = document.querySelector(".cursor-dot");
     const tails = document.querySelectorAll(".cursor-tail");
@@ -28,17 +31,16 @@ const CustomCursor = () => {
         tail.style.left = `${positions[index].x}px`;
       });
 
-      // Show tails while moving
-      tails.forEach((tail) => {
-        tail.classList.add("active");
-      });
+      if (!isMoving.current) {
+        isMoving.current = true;
+        setMoving(true);
+      }
 
       clearTimeout(moveTimeout);
       moveTimeout = setTimeout(() => {
-        tails.forEach((tail) => {
-          tail.classList.remove("active");
-        });
-      }, 10); // adjust delay if needed
+        isMoving.current = false;
+        setMoving(false);
+      }, 100); // 300ms feels natural
     };
 
     document.addEventListener("mousemove", moveCursor);
@@ -52,15 +54,13 @@ const CustomCursor = () => {
       <div className="cursor-dot"></div>
       {[...Array(totalTails)].map((_, index) => {
         const size = 26 - index * 0.6;
-        const opacity = 0.5 - index * 0.015;
         return (
           <div
             key={index}
-            className="cursor-tail"
+            className={`cursor-tail ${moving ? "active" : ""}`}
             style={{
               width: `${size}px`,
               height: `${size}px`,
-              opacity: opacity,
             }}
           ></div>
         );

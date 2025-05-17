@@ -2,7 +2,8 @@ body {
     cursor: none;
   }
   
-  .cursor-dot, .cursor-tail {
+  .cursor-dot,
+  .cursor-tail {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,9 +24,9 @@ body {
     height: 7px;
     background: white;
     opacity: 0;   
-    transition: top 0.05s linear, left 0.05s linear;
+    transition: top 0.05s linear, left 0.05s linear, opacity 0.2s ease;
   }
-  body.moving .cursor-tail {
-    opacity: 1;
+  .cursor-tail.active {
+    opacity: 0.5;
   }
   

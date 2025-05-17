@@ -111,7 +111,7 @@ function Home() {
 
           {/* right side */}
 
-          <div className="vh-100 vw-100 rounded overflow-y-auto p-5 bg-dark text-white ">
+          <div className="aboutme-scroll vh-100 vw-100 rounded overflow-y-auto p-5 bg-dark text-white ">
             {/* description */}
             <div className="mb-5 about-section">
               <h2 className=" heading-career">Who am I?</h2>
