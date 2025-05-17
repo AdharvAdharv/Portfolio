@@ -92,7 +92,7 @@ function Home() {
               <img
                 src="https://img.icons8.com/?size=100&id=YRRhCXfA0Vd0&format=png&color=000000"
                 alt="Email logo"
-                width="40" 
+                width="40"
                 height="40"
               />
             </a>
@@ -129,7 +129,7 @@ function Home() {
 
               {/* Project card */}
               <div
-                className="border p-3 mb-3 rounded shadow-sm"
+                className="div-project"
                 onClick={() =>
                   window.open(
                     "https://github.com/AdharvAdharv/Care-Lift.git",
@@ -145,7 +145,7 @@ function Home() {
               </div>
 
               <div
-                className="border p-3 mb-3 rounded shadow-sm"
+                className="div-project"
                 onClick={() =>
                   window.open(
                     "https://github.com/AdharvAdharv/ReadEase.git",
@@ -161,7 +161,7 @@ function Home() {
               </div>
 
               <div
-                className="border p-3 mb-3 rounded shadow-sm"
+                className="div-project"
                 onClick={() =>
                   window.open(
                     "https://github.com/AdharvAdharv/Task-Management.git",
@@ -215,7 +215,11 @@ function Home() {
               <div className="d-flex flex-wrap justify-content-center gap-5 mt-5">
                 {/* React icon */}
                 <div className="tech-hover-wrap">
-                  <img src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000" alt="React" className="tech-icon" />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000"
+                    alt="React"
+                    className="tech-icon"
+                  />
                   <div className="hover-text">React</div>
                 </div>
 
@@ -295,7 +299,11 @@ function Home() {
                 </div>
 
                 <div className="tech-hover-wrap">
-                  <img src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000" alt="MySQL" className="tech-icon" />
+                  <img
+                    src="https://img.icons8.com/?size=100&id=UFXRpPFebwa2&format=png&color=000000"
+                    alt="MySQL"
+                    className="tech-icon"
+                  />
                   <div className="hover-text">MySQL</div>
                 </div>
               </div>
@@ -306,7 +314,20 @@ function Home() {
           <div className="vh-100 vw-100 d-flex flex-column justify-content-center align-items-center">
             <h2 className="heading-tech">TECH </h2>
             <h2 className="heading-set"> SET</h2>
-          </div>
+            </div>
+            </div>
+
+        {/* Resume download button */}
+        <div className="button-wrapper">
+        <button className=" btn-resume">
+          <a
+            href="/resume.pdf"
+            download="Adharv_Resume.pdf"
+            style={{ textDecoration: "none", color: "inherit" }}
+            >
+            Download Resume
+          </a>
+        </button>
         </div>
       </div>
     </>

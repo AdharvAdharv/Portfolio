@@ -198,6 +198,54 @@ body {
     font-family:  'Fugaz One', sans-serif;;
   }
 
+  .div-project{
+    cursor: pointer; /* pointer cursor on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid ; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  }
+  .div-project:hover {
+    transform: translateY(-5px); /* slight lift */
+    box-shadow: 0 8px 20px rgba(47, 173, 152, 0.6); /* golden glow shadow */
+    border-color: rgb(65, 30, 189); /* highlight border */
+    background-color: rgba(57, 196, 214, 0.1); /* subtle background tint */
+  }
+  .div-project:hover h4 {
+    text-decoration: underline;
+  }
+
+  .btn-resume {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .btn-resume:hover {
+    background-color: #3ea543;
+    color: black;
+  }
+  
+  .btn-resume a {
+    color: white;
+    font-weight: bold;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+  
 
  
 
