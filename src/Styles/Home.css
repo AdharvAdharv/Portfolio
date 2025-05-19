@@ -233,7 +233,7 @@ body {
   
   .btn-resume:hover {
     background-color: #3ea543;
-    color: black;
+    color: rgb(34, 34, 194);
   }
 
   .button-wrapper {

@@ -220,7 +220,7 @@ function Home() {
                     alt="React"
                     className="tech-icon"
                   />
-                  <div className="hover-text">React</div>
+                  <div className="hover-text">React.js</div>
                 </div>
 
                 <div className="tech-hover-wrap">
@@ -243,11 +243,11 @@ function Home() {
 
                 <div className="tech-hover-wrap">
                   <img
-                    src="https://img.icons8.com/?size=100&id=9ESZMOeUioJS&format=png&color=000000"
-                    alt="NestJS"
+                    src="https://img.icons8.com/?size=100&id=t4YbEbA834uH&format=png&color=000000"
+                    alt="React Native"
                     className="tech-icon"
                   />
-                  <div className="hover-text">Nest.js</div>
+                  <div className="hover-text">React Native</div>
                 </div>
 
                 <div className="tech-hover-wrap">
@@ -258,6 +258,8 @@ function Home() {
                   />
                   <div className="hover-text">Express.js</div>
                 </div>
+
+                
               </div>
             </div>
 
@@ -282,6 +284,16 @@ function Home() {
                   />
                   <div className="hover-text">Bootstrap</div>
                 </div>
+
+                <div className="tech-hover-wrap">
+                  <img
+                    src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000"
+                    alt="Figma"
+                    className="tech-icon"
+                  />
+                  <div className="hover-text">Figma</div>
+                </div>
+
               </div>
             </div>
 
